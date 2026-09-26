@@ -36,3 +36,6 @@ Affichage intégral 4:5 (1080 × 1350) et miniature indépendante, importée ou 
 
 ## Dossier Google Drive
 Le dossier de référence fourni par le propriétaire est configuré par la variable serveur `DRIVE_FOLDER_URL` dans l’hébergement (à ne pas commiter). Le lien est transmis aux visiteurs de l’application ; les autorisations restent gérées dans Google Drive. Le menu, les fiches et le formulaire donnent un accès direct au dossier. Un lien spécifique par post prend priorité. Aucun contenu Drive n’est récupéré ou transféré automatiquement ; une intégration Google Drive API avec autorisation d’accès distincte serait nécessaire pour automatiser les envois.
+
+## Mobile
+Sur téléphone : calendrier compact sans défilement horizontal, sélection du jour et cartes 4:5 lisibles, menu refermé après sélection, formulaires pleine hauteur avec commandes accessibles. Les champs utilisent 16 px et le zoom du navigateur reste autorisé.
