@@ -1,0 +1,2 @@
+import {storage,failure} from '@/lib/storage';
+export async function GET(){try{const {results}=await storage().DB.prepare('SELECT * FROM posts ORDER BY date').all();return new Response(JSON.stringify({version:1,exportedAt:new Date().toISOString(),posts:results.map(p=>({...p,assets:JSON.parse(p.assets as string),thumbnail:p.thumbnail?JSON.parse(p.thumbnail as string):null}))},null,2),{headers:{'Content-Type':'application/json','Content-Disposition':'attachment; filename="calendrier-publications.json"'}})}catch(e){return failure(e)}}
